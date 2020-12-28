@@ -1,5 +1,5 @@
 resources:
 - prometheus-operator.yml
-- prom-op-rbac-helper.yaml
+#- prom-op-rbac-helper.yaml
 #- grafana
 # this is base dummy commit
