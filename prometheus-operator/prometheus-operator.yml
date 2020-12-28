@@ -1765,7 +1765,10 @@ spec:
 
             ## External labels to add to any time series or alerts when communicating with external systems
             ##
-            externalLabels: {}
+            externalLabels:
+              region: eus1
+              prometheus_group: mcp
+              cluster: platform
 
             ## Name of the external label used to denote replica name
             ##
@@ -1902,11 +1905,11 @@ spec:
 
             ## How long to retain metrics
             ##
-            retention: 10d
+            retention: 7d
 
             ## Maximum size of metrics
             ##
-            retentionSize: ""
+            retentionSize: "10GiB"
 
             ## Enable compression of the write-ahead log using Snappy.
             ##
@@ -1938,7 +1941,7 @@ spec:
             ##
             podMetadata:
               labels:
-            #    aadpodidbinding: sep-eus1-lower-mcp-secret-provider
+                aadpodidbinding: sep-eus1-lower-mcp-secret-provider
             #   app: prometheus
             #   k8s-app: prometheus
 
