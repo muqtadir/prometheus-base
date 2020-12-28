@@ -1937,8 +1937,11 @@ spec:
             ## Metadata Labels and Annotations gets propagated to the prometheus pods.
             ##
             podMetadata:
-              labels:
-                aadpodidbinding: sep-eus1-lower-mcp-secret-provider
+              metadata:
+                labels:
+                  aadpodidbinding: azure-pod-identity-binding-selector
+            #  labels:
+            #    aadpodidbinding: sep-eus1-lower-mcp-secret-provider
             #   app: prometheus
             #   k8s-app: prometheus
 
@@ -2178,7 +2181,7 @@ spec:
                   secretKeyRef:
                     key: max_retries
                     name: thanos-objectstorage-aks
-              image: quay.io/thanos/thanos:v0.14.0
+              image: quay.io/thanos/thanos:v0.17.2
               imagePullPolicy: IfNotPresent
               name: thanos-sidecar
               ports:
