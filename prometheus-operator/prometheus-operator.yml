@@ -2161,7 +2161,7 @@ spec:
               - name: THANOS_STORAGE_ACCOUNT_KEY
                 valueFrom:
                   secretKeyRef:
-                    key: THANOS_ACCOUNT_KEY
+                    key: storage_account_key
                     name: thanos-objectstorage-aks
               - name: STORAGE_CONTAINER
                 valueFrom:
