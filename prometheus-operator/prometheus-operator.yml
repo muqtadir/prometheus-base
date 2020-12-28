@@ -2201,9 +2201,9 @@ spec:
               - mountPath: /prometheus
                 name: prometheus-prometheus-operator-prometheus-db
                 subPath: prometheus-db
-              - mountPath: /mnt/secrets-store
-                name: secrets-store-inline
-                readOnly: true
+              #- mountPath: /mnt/secrets-store
+              #  name: secrets-store-inline
+              #  readOnly: true
             ## InitContainers allows injecting additional initContainers. This is meant to allow doing some changes
             ## (permissions, dir tree) on mounted volumes before starting prometheus
             initContainers: []
