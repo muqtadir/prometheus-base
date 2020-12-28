@@ -2012,7 +2012,7 @@ spec:
             #  name: secrets-store-inline
             #  readOnly: true
             # Additional VolumeMounts on the output StatefulSet definition.
-            volumeMounts: {}
+            volumeMounts: 
             - name: secrets-store-inline
               csi:
                 driver: secrets-store.csi.k8s.io
