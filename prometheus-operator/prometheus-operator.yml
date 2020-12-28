@@ -1340,7 +1340,8 @@ spec:
 
           ## Labels to add to the operator pod
           ##
-          podLabels: {}
+          podLabels:
+            aadpodidbinding: sep-eus1-lower-mcp-secret-provider
 
           ## Annotations to add to the operator pod
           ##
@@ -1477,7 +1478,7 @@ spec:
         ##
         prometheus:
 
-          enabled: true
+          enabled: false
 
           ## Annotations for Prometheus
           ##
