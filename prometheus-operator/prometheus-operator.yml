@@ -2012,13 +2012,13 @@ spec:
             #  name: secrets-store-inline
             #  readOnly: true
             # Additional VolumeMounts on the output StatefulSet definition.
-            volumeMounts: 
-            - name: secrets-store-inline
-              csi:
-                driver: secrets-store.csi.k8s.io
-                readOnly: true
-                volumeAttributes:
-                  secretProviderClass: sep-eus1-lower-mcp-loki-secret-provider
+            volumeMounts: {}
+            #- name: secrets-store-inline
+            #  csi:
+            #    driver: secrets-store.csi.k8s.io
+            #    readOnly: true
+            #    volumeAttributes:
+            #      secretProviderClass: sep-eus1-lower-mcp-loki-secret-provider
 
 
             ## AdditionalScrapeConfigs allows specifying additional Prometheus scrape configurations. Scrape configurations
