@@ -1937,10 +1937,7 @@ spec:
             ## Metadata Labels and Annotations gets propagated to the prometheus pods.
             ##
             podMetadata:
-              metadata:
-                labels:
-                  aadpodidbinding: azure-pod-identity-binding-selector
-            #  labels:
+              labels:
             #    aadpodidbinding: sep-eus1-lower-mcp-secret-provider
             #   app: prometheus
             #   k8s-app: prometheus
