@@ -1341,7 +1341,7 @@ spec:
           ## Labels to add to the operator pod
           ##
           podLabels:
-            aadpodidbinding: sep-eus1-lower-mcp-secret-provider
+          - aadpodidbinding: sep-eus1-lower-mcp-secret-provider
 
           ## Annotations to add to the operator pod
           ##
